@@ -7,7 +7,7 @@
     <title>香川大学創造工学部情報コース</title>
     <style>
         body {
-            background-color: #0b0f19;
+            background-color: #002B5B;
             color: white;
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -46,29 +46,63 @@
         }
 
         nav a:hover {
-            color: #00aaff;
+            color: #7BAA57;
         }
 
 
         footer {
-            background-color: #111;
-            color: #ccc;
-            padding: 2.5em 1em;
-            font-size: 1em;
+            background-color: #000;
+            color: white;
+            padding: 1em 1em;
+            font-size: 0.9em;
             font-weight: bold;
             text-align: left;
-            line-height: 1.8;
+            line-height: 1.0;
         }
 
         footer a {
-            color: #aaa;
+            color: white;
             text-decoration: none;
         }
 
         footer a:hover {
+            color: white;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 1em;
+            border-top: 1px solid #333;
+            margin-top: 1em;
+        }
+
+        .footer-links span {
+            font-size: 0.95em;
+            color: #ccc;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin-right: 1em;
+        }
+
+        .footer-links a:hover {
             color: #fff;
         }
+
+        @media (max-width: 600px) {
+            .footer-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5em;
+            }
+        }
     </style>
+
 </head>
 
 <body>
@@ -95,11 +129,15 @@
     <h2>テーマ６</h2>
 
     <footer>
-        香川大学 創造工学部<br>
-        〒761-0396 香川県高松市林町2217-20<br>
-        TEL: (087) 864-2000 / FAX: (087) 864-2032<br><br>
-        <a href="#">香川大学ホームページ</a>｜<a href="#">プライバシーポリシー</a><br><br>
-        &copy; 2025 Kagawa University All Rights Reserved.
+        <div class="address">
+            香川大学 創造工学部<br>
+            〒761-0396 香川県高松市林町2217-20<br>
+            TEL: (087) 864-2000 / FAX: (087) 864-2032<br><br>
+        </div>
+        <div class="footer-links">
+            <span><a href="#">香川大学ホームページ</a> ｜ <a href="#">プライバシーポリシー</a></span>
+            <span class="copyright">© 2025 Kagawa University All Rights Reserved.</span>
+        </div>
     </footer>
 
 </body>
