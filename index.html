@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>地域協働について | 香川大学創造工学部</title>
+    <title>香川大学創造工学部情報コース</title>
     <style>
         body {
-            background-color: #0b0f19;
+            background-color: #000E1D;
             color: white;
+            font-size: 14px;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -19,15 +20,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #000;
+            background-color: black;
             padding: 1.2em 2em;
             flex-wrap: nowrap;
         }
 
-        .logo {
-            height: 60px;
-            max-width: 350px;
-        }
 
         nav {
             display: flex;
@@ -37,7 +34,7 @@
 
         nav a {
             color: white;
-            margin: 0 1.2em;
+            margin: 0 0.6em;
             text-decoration: none;
             font-size: 18px;
 
@@ -46,43 +43,77 @@
         }
 
         nav a:hover {
-            color: #00aaff;
+            color: #7BAA57;
         }
 
 
         footer {
-            background-color: #111;
-            color: #ccc;
-            padding: 2.5em 1em;
-            font-size: 1em;
+            background-color: black;
+            color: white;
+            padding: 1em 1em;
+            font-size: 0.9em;
             font-weight: bold;
-            text-align: center;
-            line-height: 1.8;
+            text-align: left;
+            line-height: 1.0;
         }
 
         footer a {
-            color: #aaa;
+            color: white;
             text-decoration: none;
         }
 
         footer a:hover {
+            color: white;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 1em;
+            border-top: 1px solid #333;
+            margin-top: 1em;
+        }
+
+        .footer-links span {
+            font-size: 0.95em;
+            color: #ccc;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin-right: 1em;
+        }
+
+        .footer-links a:hover {
             color: #fff;
         }
+
+        @media (max-width: 600px) {
+            .footer-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5em;
+            }
+        }
     </style>
+
 </head>
 
 <body>
 
     <header>
-        <img src="title image.jpg" width="500" height="70" alt="タイトル画像">
+        <img src="title image.jpg" width="300" height="50" alt="タイトル画像">
         <nav>
             <a href="index.html">ホーム</a>
             <a href="history.html">歴史</a>
-            <a href="#">授業</a>
-            <a href="#">地域協働</a>
-            <a href="#">先生</a>
-            <a href="#">研究室</a>
-            <a href="#">受験方法</a>
+            <a href="class.html">授業</a>
+            <a href="region.html">地域協働</a>
+            <a href="teacher.html">先生</a>
+            <a href="research.html">研究室</a>
+            <a href="exam.html">受験方法</a>
         </nav>
     </header>
 
@@ -93,6 +124,20 @@
     <h2>テーマ４</h2>
     <h2>テーマ５</h2>
     <h2>テーマ６</h2>
+
+    <footer>
+        <div class="address">
+            香川大学 創造工学部<br>
+            〒761-0396 香川県高松市林町2217-20<br>
+            TEL: (087) 864-2000 / FAX: (087) 864-2032<br><br>
+        </div>
+        <div class="footer-links">
+            <span><a href="https://www.kagawa-u.ac.jp/">香川大学ホームページ</a> ｜ <a
+                    href="https://www.kagawa-u.ac.jp/privacy/">プライバシーポリシー</a></span>
+            <span class="copyright">© 2025 Kagawa University All Rights Reserved.</span>
+        </div>
+    </footer>
+
 </body>
 
 </html>
