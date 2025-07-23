@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Yu Gothic', sans-serif;
+  background-color: #0f1a2c;
+  color: white;
+}
+
+header {
+  background-color: #0f1a2c;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.header-text {
+  flex-grow: 1;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.lab-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+  background-color: #1e2a3d;
+}
+
+.lab-image {
+  width: 40%;
+  max-width: 500px;
+  height: auto;
+}
+
+.lab-description {
+  flex: 1;
+  min-width: 250px;
+}
+
+.lab-description h2 {
+  background-color: #1c3f75;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+}
+
+.lab-description p {
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.message {
+  background-color: #1e2a3d;
+  padding: 30px;
+}
+
+.message h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.message p {
+  line-height: 1.8;
+}
+
+footer {
+  background-color: #0f1a2c;
+  padding: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
