@@ -1,16 +1,16 @@
-/* 全体 */
+/* 共通設定 */
 body {
   margin: 0;
-  font-family: "游ゴシック体", "Yu Gothic", sans-serif;
-  background-color: #001028;
-  color: #fff;
+  font-family: "メイリオ", sans-serif;
+  background-color: #0b1320;
+  color: #ffffff;
 }
 
 /* ヘッダー */
 .header-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   background-color: #000;
   padding: 10px 20px;
   flex-wrap: wrap;
@@ -18,128 +18,135 @@ body {
 
 .header-left {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .logo {
-  height: 50px;
+  width: auto;
+  height: auto;
+  max-height: 80px;
   margin-right: 15px;
+  vertical-align: middle;
 }
 
-.university-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
 
-.university-name {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.university-sub {
-  font-size: 10px;
-  color: #ccc;
-  letter-spacing: 0.08em;
-}
-
-.page-title {
-  margin-top: 8px;
+.university-text .page-title {
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 4px solid #ccd9ff;
+  color: #fff;
+  border-bottom: 4px solid #fff;
   display: inline-block;
-  padding-bottom: 2px;
+  margin-top: 5px;
+}
+
+.university-name, .university-sub {
+  font-size: 12px;
+  color: #ccc;
 }
 
 /* ナビゲーション */
 .main-nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 15px;
-  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
-.main-nav ul li a {
+.main-nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  padding: 5px 10px;
 }
 
-.main-nav ul li a:hover {
+.main-nav a:hover {
   text-decoration: underline;
 }
 
-/* ラボ紹介 */
+/* 研究室セクション */
 .labs {
   display: flex;
-  justify-content: center;
-  gap: 40px;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 40px 20px;
+  gap: 40px;
 }
 
 .lab {
-  width: 380px;
-  text-decoration: none;
+  background-color: #1a1a2e;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
   color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.lab:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
 .lab img {
   width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  height: 180px;
+  object-fit: cover;
 }
 
 .lab-info {
-  margin-top: 10px;
+  padding: 15px;
 }
 
 .lab-info h3 {
-  margin: 5px 0;
-  font-weight: normal;
+  margin: 10px 0 5px;
+  font-size: 18px;
 }
 
 .lab-info p {
-  margin: 0;
   font-size: 14px;
-  color: #bbb;
+  color: #ccc;
 }
 
 /* フッター */
 footer {
   background-color: #000;
-  color: #bbb;
-  padding: 30px 20px;
-  font-size: 13px;
+  padding: 30px 20px 10px;
+  font-size: 12px;
+  color: #ccc;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
-.footer-left img {
-  height: 40px;
-  margin-bottom: 10px;
+.footer-logo {
+  width: auto;
+  height: auto;
+  max-height: 80px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.footer-left p {
+  line-height: 1.6;
 }
 
 .footer-center,
 .footer-right {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 
 .footer-center a,
 .footer-right a {
-  color: #bbb;
+  color: #ccc;
   text-decoration: none;
-  font-size: 13px;
 }
 
 .footer-center a:hover,
@@ -147,8 +154,27 @@ footer {
   text-decoration: underline;
 }
 
-footer p {
-  margin: 10px 0 0 0;
-  font-size: 11px;
+footer .copyright {
   text-align: center;
+  margin-top: 20px;
+  font-size: 11px;
+  color: #777;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .labs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lab {
+    width: 90%;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
 }
