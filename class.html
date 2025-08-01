@@ -59,6 +59,20 @@
         main p{
             font-size: 15px;
         }
+
+        .program-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.program-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+      
         footer {
             background-color: black;
             color: white;
@@ -130,24 +144,28 @@
     </header>
 
     <main>
+        <section>
         <h1 >■授業について</h1>
         <naiyou>
             <h2>実践に基づいた授業内容</h2>
             <p>香川大学情報コースでは、企業出身の教員が多く在籍しており、実際に開発したシステムにまつわる実例や業界での経験を授業で聞くことができます。単なる知識だけでなく、将来の進路やキャリアを考えるヒントを得られる授業内容が特徴です。
             </p>
-        </naiyou>
+        </naiyou></section>
+        <section>
         <program>
+             <div class="program-section">
+        <div class="program-text">
             <h2>２つの専門プログラム</h2>
             <p>情報コースには、2つの専門プログラムが設置されています。</p>
             <p>・情報システムセキュリティプログラム</p>
             <p>→安全で信頼性の高い情報システムの構築・運用技術を習得</p>
             <p>・情報社会プログラム</p>
             <p>→情報の利活用やその社会的影響について学び、社会課題に対応する力を養成</p>
-            <img src="2e6dd0e3f4efe3c59de66255724ee122_f87964.png" width="600" height="300" alt="program画像">
+            <img class="program-image" src="2e6dd0e3f4efe3c59de66255724ee122_f87964.png" alt="program画像">
             <h2>実社会との連携</h2>
             <p>講義の一環として、香川県の情報通信企業「STNet」などへの会社見学の機会も設けられています。現場での情報技術の使われ方やシステムの運用について理解を深めることができ、座学では得られない学びが得られます。
             </p>
-        </program>
+        </program></section>
     </main>
 
     <footer>
